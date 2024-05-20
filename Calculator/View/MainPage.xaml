@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage x:Class="Calculator.MainPage"
+             xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Resources>
+        <Style TargetType="Button">
+            <Setter Property="FontSize" Value="Medium"/>
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="BackgroundColor" Value="White" />
+            <Setter Property="BorderColor" Value="Black" />
+            <Setter Property="VerticalOptions" Value="Center"/>
+            <Setter Property="HorizontalOptions" Value="Center" />
+            <Setter Property="HeightRequest" Value="80" />
+            <Setter Property="WidthRequest" Value="80" />
+            <Setter Property="Margin" Value="5,10,5,5" />
+            <Setter Property="FontSize" Value="Medium" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+    </ContentPage.Resources>
+    <VerticalStackLayout 
+        BackgroundColor="SlateGray">
+        <Border>
+            <Label
+            Background="AntiqueWhite" 
+            Margin="15,10,15,10" 
+            HeightRequest="100"/>
+        </Border>
+        <Grid
+            ColumnDefinitions="*,*,*,*"
+            RowDefinitions="*,*,*,*,auto">
+            <Button
+                Grid.Column="0"
+                Grid.Row="0"
+                Text="clear" />
+            <Button
+                Grid.Column="1"
+                Grid.Row="0"
+                Text="=" />
+            <Button
+                Grid.Column="2"
+                Grid.Row="0"
+                Text="/" />
+            <Button
+                Grid.Column="3"
+                Grid.Row="0"
+                Text="*" />
+            <Button
+                Grid.Column="0"
+                Grid.Row="1"
+                Text="7" />
+            <Button
+                Grid.Column="1"
+                Grid.Row="1"
+                Text="8" />
+            <Button
+                Grid.Column="2"
+                Grid.Row="1"
+                Text="9" />
+            <Button
+                Grid.Column="3"
+                Grid.Row="1"
+                Text="-" />
+            <Button
+                Grid.Column="0"
+                Grid.Row="2"
+                Text="4" />
+            <Button
+                Grid.Column="1"
+                Grid.Row="2"
+                Text="5" />
+            <Button
+                Grid.Column="2"
+                Grid.Row="2"
+                Text="6" />
+            <Button
+                Grid.Column="3"
+                Grid.Row="2"
+                Text="+" />
+            <Button
+                Grid.Column="0"
+                Grid.Row="3"
+                Text="1" />
+            <Button
+                Grid.Column="1"
+                Grid.Row="3"
+                Text="2" />
+            <Button
+                Grid.Column="2"
+                Grid.Row="3"
+                Text="3" />
+            <Button
+                Grid.Column="3"
+                Grid.Row="3"
+                Grid.RowSpan="2"
+                Text="enter" 
+                HeightRequest="175" />
+            <Button
+                Grid.Column="0"
+                Grid.ColumnSpan="2"
+                Grid.Row="4"
+                Text="0" 
+                WidthRequest="180"/>
+            <Button
+                Grid.Column="2"
+                Grid.Row="4"
+                Text="." />
+        </Grid>
+    </VerticalStackLayout>
+
+</ContentPage>
